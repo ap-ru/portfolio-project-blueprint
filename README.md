@@ -33,3 +33,41 @@ cd repository-name
 
 You can now open the folder in your favorite code editor (e.g., VS Code):
 code .
+
+How to Deploy This Repository to Vercel
+
+1. Create a Vercel Account
+
+Go to Vercel and sign up.
+You can use your GitHub account to sign in, which simplifies deployment.
+
+2. Install the Vercel CLI (Optional)
+
+If you prefer using the terminal, install the Vercel CLI globally:
+npm install -g vercel
+
+3. Connect Vercel to Your GitHub Account
+
+In your Vercel dashboard:
+Click "New Project".
+Choose "Import Git Repository".
+Authorize Vercel to access your GitHub repositories if prompted.
+Select the repository you want to deploy.
+
+4. Configure Deployment Settings
+
+Vercel will detect the framework automatically (e.g., React, Next.js, etc.).
+Verify or configure the build settings:
+Framework Preset: Select your framework (e.g., React if it’s a React app).
+Build Command: Leave as npm run build (or specify a custom command if needed).
+Output Directory: Usually dist or build, depending on your project setup.
+
+5. Deploy Your Project
+
+Click "Deploy" to start the deployment process.
+Vercel will clone your repository, install dependencies, and build the project automatically.
+
+6. Wait for Deployment
+
+Once deployment is complete, Vercel will provide a live URL where your project is hosted, such as:
+https://your-project-name.vercel.app
